@@ -1,0 +1,23 @@
+<!--pages/reContent/reContent.wxml-->
+	<view class="contentBg">
+		<scroll-view class="letterContent animated fadeInDown" scroll-y="true">{{value.value}}</scroll-view>
+		<view class="User animated fadeInDown">
+		<image src="{{value.authorIcon}}"></image>
+		<view>{{value.author}}</view>
+		<text>{{value.Date}}</text>
+		</view>
+		<view class="btn1 {{SendComment==false?'':'PowerCenter animated fadeInLeft'}} {{PowerRead==true?'PowerHidden animated fadeOutDownBig':' '}}" bindtap="sendPower">
+			<image class="Power" src="../../../images/{{PowerRead == true ?'heartr':'hearth'}}.png"></image>
+			<view>给个鼓励</view>
+		</view>
+		
+			<view bindtap="check" class="btn2 {{PowerRead==true?'CommentCenter animated fadeInRight':' '}} {{SendComment==true?'CommentHidden animated fadeOutDownBig':' '}}">
+			<image class="reWriter" src="../../../images/reWriter.png"></image>
+			<view>给个回信</view>
+		</view>
+		
+			<image wx:if="{{gifShow}}" src="../../../images/gl.gif" 
+			class="gif {{gifShow==true?'animated fadeInLeft':''}} {{gifShowend==true?'animated fadeOutRight':''}}"></image>
+			
+		
+	</view>

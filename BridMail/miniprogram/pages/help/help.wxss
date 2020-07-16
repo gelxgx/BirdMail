@@ -1,0 +1,11 @@
+
+.van-cell__title,.van-cell__value{
+  font-size: 16px;
+}
+.van-cell{
+  line-height: var(--cell-line-height,43px) !important;
+  height: 60px;
+}
+.van-collapse-item__content{
+  font-size:var(--collapse-item-content-font-size,14px) !important;
+}

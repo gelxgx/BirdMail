@@ -1,0 +1,25 @@
+<!--pages/writedContent/writedContent.wxml-->
+<view class="content">
+    <van-popup show="{{isShow}}" bind:close="isShow" position="bottom">
+        <image src="../../../images/paper.png" class="paper"></image>
+            <scroll-view class="Content" scroll-y="true">{{value.value}}</scroll-view>
+            <view class="User">
+                <image src="{{value.authorIcon}}" class="AuthorIcon"></image>
+                <view class="Author">{{value.author}}</view>
+            </view>
+            <view class="Date">{{value.Date}}</view>
+        <view class="cancel" >
+        <image bindtap="isShow" src="../../../images/cancelNew.png"></image>
+      </view>
+    </van-popup>
+
+    
+    <view class="otherContent" bindtap="isShow">
+         <view>{{value.value}}</view>
+         <image class="otherText" src="../../../images/MineWrite.png"></image>
+         </view>
+    <scroll-view class="letterContent" scroll-y="true">
+    {{value.Comment}}
+    </scroll-view>
+    <view class="reDate">{{value.reDate}}</view>
+</view>

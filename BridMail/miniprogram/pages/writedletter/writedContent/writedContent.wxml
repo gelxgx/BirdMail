@@ -1,0 +1,33 @@
+<!--pages/writedContent/writedContent.wxml-->
+<view class="content">
+    <van-popup show="{{isShow}}" bind:close="isShow" position="bottom">
+        <image src="../../../images/paper.png" class="paper"></image>
+            <scroll-view class="Content" scroll-y="true">{{value.Comment}}</scroll-view>
+             <view class="User">
+                <image src="{{value.reAuthorIcon}}" class="AuthorIcon"></image>
+                <view class="Author">{{value.reAuthor}}</view>
+            </view>
+            <view class="reDate">{{value.reDate}}</view>
+        <view class="cancel" >
+        <image bindtap="isShow" src="../../../images/cancelNew.png"></image>
+      </view>
+    </van-popup>
+
+    <view wx:if="{{haveComment}}" class="otherContent {{haveComment==true?'animated bounceInLeft':''}}" bindtap="isShow">
+         <view>来自：{{value.reAuthor}}，给你的回信~</view>
+         <image class="otherText" src="../../../images/MineWrite.png"></image>
+    </view>
+
+    <scroll-view class="letterContent {{haveComment==true?'letterContentwithComment animated bounceInLeft':''}}" scroll-y="true">{{value.value}}</scroll-view>
+    
+    <view class="Date animated bounceInLeft">{{value.Date}}</view>
+
+    <view wx:if="{{havePower}}" class="givePower {{havePower==true?'animated bounceInLeft':''}}">
+        <image src="{{value.PowerIcon}}"></image>
+        <text>给你鼓励</text>
+    </view>
+
+    <view class="delete animated rollIn" bindtap="delete">
+        <image src="../../../images/delete.png"></image>
+    </view>
+</view>

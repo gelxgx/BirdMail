@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-loading": "../../../miniprogram_npm/@vant/weapp/loading/index"
+  },
+  "navigationBarBackgroundColor":"#C28044",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "他人的信"
+}

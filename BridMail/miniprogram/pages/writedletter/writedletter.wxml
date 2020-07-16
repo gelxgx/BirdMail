@@ -1,0 +1,60 @@
+<!--pages/writedletter/1/writedletter.wxml-->
+<view class="flash animated rollIn" bindtap="refresh">
+  <image wx:if="{{refresh}}" src="../../images/loading1.png"></image>
+   <van-loading wx:else="{{refresh}}" class="freshing" size="30px"/>
+ </view>
+    <van-tabs active="{{ active }}"  
+    bind:change="onChange"
+    color="white"
+    animated
+    swipeable
+    sticky >
+        <van-tab title="我写的内容" >
+        <scroll-view class="bg"
+        scroll-y="true" 
+bindscrolltolower="onBottomText"
+lower-thresholed="2" 
+scroll-anchoring="true">
+   <view wx:if="{{noneText}}" class="none {{shake==true?'animated shake':''}}">
+      <view class="text">你还没写内容呢</view>
+   </view>
+      <block wx:for="{{values}}" wx:key="index1" >
+      <navigator hover-class="none" url="../writedletter/writedContent/writedContent?id={{item._id}}">
+        <view class="letterCard animated zoomInDown">
+          <view class="slContent">
+          <image class="Mine" src="../../images/MineWrite.png"></image>
+          <text class="value">{{item.value}}</text>
+          <text class="Date">{{item.Date}}</text>
+         </view>
+      </view>
+   </navigator>
+   </block>
+   </scroll-view>
+   </van-tab>
+   <van-tab title="我写的回复" >
+   <scroll-view class="bg"
+   scroll-y="true" 
+bindscrolltolower="onBottomComment">
+<view wx:if="{{noneComment}}" class="none {{shake==true?'animated shake':''}}">
+      <view class="text ">你还没回复过他人呢</view>
+   </view>
+      <block wx:for="{{Comment}}" wx:key="index2">
+      <navigator hover-class="none" url="../writedletter/replayContent/replayContent?id={{item._id}}">
+      <view class="letterCard animated zoomInLeft">
+      
+         <view class="slContent">
+         <view class="Date">{{item.Date}}</view>
+         <view class="otherContent">
+         <view>{{item.value}}</view>
+         <image class="otherText" src="../../images/MineWrite.png"></image>
+         </view>
+         <image class="Minecomment" src="../../images/MineComment.png"></image>
+          <view class="comment">{{item.Comment}}</view>
+         </view>
+      </view>
+   </navigator>
+   </block>
+   </scroll-view>
+   </van-tab>
+  </van-tabs>
+

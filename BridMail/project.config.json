@@ -1,0 +1,138 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"appid": "wx43542875e634fc80",
+	"projectname": "%E6%A0%91%E6%B4%9E",
+	"libVersion": "2.11.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/writedletter/writedletter",
+					"pathName": "pages/writedletter/writedletter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/write/write",
+					"pathName": "pages/write/write",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/writedContent/writedContent",
+					"pathName": "pages/writedContent/writedContent",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/getletter/getletter",
+					"pathName": "pages/getletter/getletter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/reContent/reContent",
+					"pathName": "pages/reContent/reContent",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/othersEmail/othersEmail",
+					"pathName": "pages/othersEmail/othersEmail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/reWriter/reWriter",
+					"pathName": "pages/reWriter/reWriter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/help/help",
+					"pathName": "pages/help/help",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lb/lb",
+					"pathName": "pages/lb/lb",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

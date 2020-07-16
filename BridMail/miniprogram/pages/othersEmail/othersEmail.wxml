@@ -1,0 +1,32 @@
+<!--pages/othersEmail/1/othersEmail.wxml-->
+<scroll-view class="scroll-view_H" scroll-x scroll-with-animation style="width: 100%;height:100vh" 
+bindscroll="getSelectItem"
+bindscrolltolower="onBotton"
+lower-thresholed="2">
+          <view wx:if="{{none}}"class="none {{shake==true?'animated shake':''}}">
+            <view class="noneText">还没有别人写好的信哦</view>
+          </view>
+     <block wx:for="{{values}}"  wx:key="unique" wx:for-index="id" wx:for-item="item">
+       <view class=" scroll_item  {{item.selected ? 'selected' : ''}}" data-index='{{item.index}}' data-id="{{item._id}}">
+       <view class='proImg animated bounceInLeft'>
+         <image src="../../images/ckbgd.png" class="slide-image" mode="widthFix"/>
+         <navigator hover-class="none" url="../othersEmail/reContent/reContent?id={{item._id}}">
+         <view class="content">
+          
+          <view class="text">{{item.value}}</view>
+          <view class="Date">{{item.Date}}</view>
+         </view>
+         </navigator>
+           <view class="user">来自：
+             <image class="icon" mode="aspectFit" src="{{item.authorIcon}}"></image>
+             <view class="author">{{item.author}}</view>
+            </view>
+          </view>
+       </view>
+     </block>
+   </scroll-view>
+   <view class="flash animated rollIn" bindtap="refresh">
+<image wx:if="{{refresh}}" src="../../images/loading.png"></image>
+   <van-loading wx:else="{{refresh}}" class="freshing" size="30px"/>
+ </view>
+

@@ -1,0 +1,30 @@
+<!--miniprogram/pages/get/getletter.wxml-->
+<scroll-view 
+class="bg" 
+scroll-y="true" 
+refresher-enabled="{{true}}" 
+refresher-triggered="{{triggered}}" 
+bindrefresherrefresh="onRefresh" 
+bindscrolltolower="onBottom" 
+bindrefresherrestore="onStore" 
+lower-threshold="1">
+<view wx:if="{{noneText}}" class="none {{shake==true?'animated shake':''}}">
+      <view class="text">还没收到回信噢</view>
+   </view>
+  <block wx:for="{{values}}" wx:key="value">
+    <navigator hover-class="none" url="../writedletter/replayContent/replayContent?id={{item._id}}" data-id="{{item._id}}">
+      <view class="letterCard animated zoomInDown">
+      <image src="../../images/{{item.isRead == true?'readed':'read'}}.png"></image>
+      <view class="Date">{{item.Date}}</view>
+      <view class="slContent">
+           <view class="Content">{{item.Comment}}</view>
+        </view>
+      <view class="userName">来自：
+      <image src="{{item.reAuthorIcon}}" class="icon"></image>
+      <view class="reAuthor">{{item.reAuthor}}</view>
+      </view>
+      </view>
+    </navigator>
+  </block>
+
+</scroll-view>

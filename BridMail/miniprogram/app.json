@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/help/help",
+    "pages/write/write",
+    "pages/writedletter/writedletter",
+    "pages/writedletter/writedContent/writedContent",
+    "pages/writedletter/replayContent/replayContent",
+    "pages/getletter/getletter",
+    "pages/othersEmail/othersEmail",
+    "pages/othersEmail/reContent/reContent",
+    "pages/othersEmail/reWriter/reWriter"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ABE9B1",
+    "navigationBarTitleText": "小鸟信箱",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

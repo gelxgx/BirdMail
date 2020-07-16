@@ -1,0 +1,104 @@
+/* pages/reContent/reContent.wxss */
+@import"../../../utils/animate.wxss";
+.contentBg{
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://6765-gelx-rntj2-1302013920.tcb.qcloud.la/images/AllWrite.jpg?sign=ed50655de90c691af9f88bcead3b024a&t=1591811708);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.letterContent{
+  width: 65%;
+  height: 60vh;
+  margin: 0 auto;
+  position: relative;
+  top: 130rpx;
+  left: 10rpx;
+  font-size: 18px;
+  text-indent: 2em;
+}
+.btn1{
+  position: absolute;
+  top: 83vh;
+  left: 80rpx;
+  display: flex;
+  width: 120px;
+  height: 40px;
+  background: -webkit-linear-gradient(top,#DCBC60,#D8B558,#D1A850);
+  line-height: 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+.PowerCenter{
+  left: 250rpx !important;
+}
+.PowerHidden{
+  display: none;
+}
+.CommentCenter{
+  position: relative;
+  left: 240rpx !important;
+}
+.CommentHidden{
+  display: none !important;
+}
+.Power{
+  width: 25px;
+  height: 24px;
+  position: relative;
+  top: 9px;
+  left: 8px;
+}
+.User{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 530rpx;
+  position: relative;
+  top: 9vh;
+  left: 120rpx;
+} 
+.User image{
+width: 35px;
+height: 35px;
+border-radius: 100%;
+}
+.User view{
+  position: relative;
+  left: -30px;
+}
+
+.btn1 view{
+  position: relative;
+  left: 11px;
+}
+.btn2{
+  position: absolute;
+  top: 83vh;
+  left: 450rpx;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  background: -webkit-linear-gradient(top,#DCBC60,#D8B558,#D1A850);
+  border-radius: 15px;
+  text-align: center;
+}
+.reWriter{
+  width: 23px;
+  height: 23px;
+  position: relative;
+  top: 9px;
+  left: 10px;
+}
+.btn2 view{
+  position: relative;
+  left: 13px;
+}
+.gif{
+  width: 65%;
+  height: 15%;
+  position: relative;
+  top: -30vh;
+  left: 125rpx;
+}

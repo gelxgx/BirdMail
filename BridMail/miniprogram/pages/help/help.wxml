@@ -1,0 +1,23 @@
+<!--miniprogram/pages/help/help.wxml-->
+<view class='help'>
+ <van-collapse value="{{ activeNames }}" bind:change="onChange">
+  <van-collapse-item title="如何使用？" name="1" >
+    <text>进入到主界面后，可以点击位于屏幕左边羽毛笔团的“写信”图标来写信，将自己心里的心事和烦恼写出来吧！</text>
+  </van-collapse-item>
+  <van-collapse-item title="如何知道自己收到了邮件？" name="2">
+    <text>当写的信被他人回复时，主界面会出现感叹号气泡提醒有新的消息，点击“信箱”后展开的分类木板中，会有红色的小圆点提示，只需点击即可查看他人给予的回复。  </text>
+  </van-collapse-item>
+  <van-collapse-item title="收到来自他人的邮件后可以做什么？" name="3">
+    <text>当收到他人写来的邮件后，你可以进入“信箱”中查看邮件的内容。在信纸的下方，你可以选择“给个鼓励”或“给个回信”来回复哦。</text>
+  </van-collapse-item>
+  <van-collapse-item title="如何查看自己写过的信？" name="4">
+    <text>在主界面中，你可以点击位于屏幕左边信封图案的“我的”的图标来查看“我写的信”。</text>
+  </van-collapse-item>
+  <van-collapse-item title="发言注意事项" name="5">
+    <text>写信的内容中，严禁发布任何有关暴力、色情、恐怖、反动等不健康内容的文字信息，以及广告平台，红包骚扰，诱导分享等信息。</text>
+  </van-collapse-item>
+  <van-collapse-item title="关于其他" name="6">
+    <text>每天只能发送5篇信件，鼓励他人5次，回复他人2篇信件，每篇信件至少书写16个文字。</text>
+  </van-collapse-item>
+</van-collapse>
+</view>

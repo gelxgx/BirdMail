@@ -1,0 +1,19 @@
+<!--pages/reWriter/reWriter.wxml-->
+<view class="write animated fadeIn">
+ <form bindsubmit="bsb" >
+ <view class="conts animated fadeIn">
+    <textarea class="areas" placeholder-class="pc" placeholder='想回些什么话呢……' minlength="{{min}}" maxlength="{{max}}" bindinput="inputs" name="textarea"> 
+    </textarea>
+    <text class="currentWordNumber">{{currentWordNumber}}/{{max}}</text>
+    <view class="User">
+      <view class="icon">
+      <open-data type="userAvatarUrl" ></open-data>
+    </view>
+    <open-data type="userNickName" class="Name"></open-data>
+    </view>
+    
+  </view>
+  <button  class="btn" form-type="submit">写好啦~！</button>
+ </form>
+  
+</view>

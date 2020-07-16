@@ -1,0 +1,67 @@
+<view  class="lbbg {{lbOutAnimated==true?'animated fadeOutDown':''}}" wx:if="{{lbShow}}">
+    <image class="logo animated bounceInLeft" src="../../images/welcom.jpg"></image>
+    <swiper class="swiper animated bounceInRight" indicator-dots="{{true}}" autoplay="{{true}}" >
+      <swiper-item >
+        <image src="../../images/lb1.jpg" ></image>
+        <view>生活的压力让你沮丧且无处诉说</view>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/lb2.jpg"></image>
+        <view>写下你的烦恼</view>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/lb3.jpg"></image>
+        <view>将它们投入信箱</view>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/lb4.jpg"></image>
+        <view>信鸽会带走你的烦恼</view>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/lb5.jpg"></image>
+        <view>也许还有额外惊喜</view>
+      </swiper-item>
+    </swiper>
+
+    <button class="btn animated bounceInRight" bindtap="lbShow">
+      <view class="wz" >进入你的世界</view>
+    </button>    
+  </view>
+<view class="container"> 
+  <image class="bg {{bgAnimated==true?'animated bounceInUp':''}}" wx:if="{{bgShow}}"src="{{bgNight==true?'https://6765-gelx-rntj2-1302013920.tcb.qcloud.la/images/bgNight.jpg?sign=d5a48d621069408cf821a675cc31e009&t=1591094638':'https://6765-gelx-rntj2-1302013920.tcb.qcloud.la/images/bg1.jpg?sign=8cdb638eb80d6fdfdb028311fddbbdb6&t=1591094652'}}">
+    <navigator class="help" url="../help/help" >
+      <image src="../../images/help.png" class="{{helpAnimated==true?'animated bounceInLeft':''}}"></image>
+    </navigator> 
+    <button plain="true" open-type="getUserInfo" class="write {{writeAnimated==true?'animated bounceInLeft':''}}" 
+  bindgetuserinfo="getUserInfo" data-id="{{write}}">
+      <image src="../../images/write1.png" class="writeIcon"></image>
+    </button>
+
+    <button plain="true" open-type="getUserInfo" class="Email {{EmailAnimated==true?'animated bounceInLeft':''}}"
+  bindgetuserinfo="getUserInfo" data-id="{{writedletter}}">
+      <image src="../../images/Email1.png" class="EmailIcon"></image>
+    </button>
+    <image class="NewEmail {{NewAnimated==true?'animated flash':''}}" src="../../images/newEmail.png" wx:if="{{New}}"></image>
+    <button plain="true" open-type="getUserInfo" class="post {{postAnimated==true?'animated bounceInRight':''}}"
+  bindgetuserinfo="getIconUserInfo" data-id="{{post}}">
+      <image class="postIcon" src="../../images/post.png"></image>
+    </button>
+  </image>
+</view>
+
+<van-popup show="{{ isShow }}" bind:close="isShow" position="top">    
+      <view class="mb">
+        <image src="../../images/mb.png"></image>
+        <navigator  bindtap="UpData" url="../getletter/getletter">
+          <van-icon wx:if="{{New}}" class="dot"  dot />
+          <view class="btn1" bindtap="isShow">我收到的回复</view>
+        </navigator>
+        <navigator url="../othersEmail/othersEmail">
+          <view class="btn2" bindtap="isShow">他人的信</view>
+        </navigator>
+      </view>
+      <view class="cancel" >
+        <image bindtap="isShow" src="../../images/cancelNew.png"></image>
+      </view>
+</van-popup>
+

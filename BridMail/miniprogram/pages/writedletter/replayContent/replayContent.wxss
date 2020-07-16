@@ -1,0 +1,120 @@
+/* pages/writedContent/writedContent.wxss */
+page{
+  color: black;
+}
+/*详细内容遮罩*/
+.van-popup{
+  background-color:var(--popup-background-color) !important;
+}
+.paper{
+position: relative;
+top: -6vh;
+width: 100%;
+height: 100vh;
+margin: 0 auto;
+left: -70rpx;
+}
+.Content{
+position: relative;
+top: -88vh;
+left: 120rpx;
+width: 70%;
+height: 65vh;
+}
+.cancel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cancel image{
+  width: 120rpx;
+  height: 120rpx;
+  position: relative;
+  top: -80vh;
+}
+/*主界面*/
+.content{
+  position: absolute;
+  top: -50rpx;
+  width: 100%;
+  height: 104vh;
+  background-image: url(https://6765-gelx-rntj2-1302013920.tcb.qcloud.la/images/write.jpg?sign=d838a316ef68a8833f2a8046096d6ea5&t=1591810519);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-indent: 2em;
+}
+.otherContent{
+  background-color: rgba(245,245,245,0.3);
+  width: 500rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 19vh;
+  left: 130rpx;
+  border-radius: 10px;
+}
+.otherContent view{
+  display:-webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  width: 450rpx;
+  height: 45rpx;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  position: relative;
+  top: 10rpx;
+  left: 10rpx;
+  line-height: 45rpx;
+  font-size: 12px;
+}
+.otherText{
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  left: 20rpx;
+  top: 12rpx;
+}
+.letterContent{
+  width: 65%;
+  height: 55vh;
+  margin: 0 auto;
+  position:relative;
+  top: 27vh;
+  left: 18rpx;
+  font-size: 18px;
+}
+.Date{
+position: relative;
+top: -92vh;
+left: 420rpx;
+}
+.reDate{
+  position: relative;
+  top: 28vh;
+  left: 420rpx;
+}
+.User{
+position: absolute;
+top: 73vh;
+left: 114rpx;
+width: 180px;
+height: 30px;
+display: flex;
+line-height: 30px;
+}
+.AuthorIcon{
+width: 30px;
+height: 30px;
+border-radius: 100%;
+}
+.Author{
+  position: relative;
+  left: -40rpx;
+  width: 150px;
+display:-webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

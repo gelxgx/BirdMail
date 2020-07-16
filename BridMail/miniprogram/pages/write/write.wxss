@@ -1,0 +1,80 @@
+/* miniprogram/pages/write/write.wxss */
+@import"../../utils/animate.wxss";
+.write{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://6765-gelx-rntj2-1302013920.tcb.qcloud.la/images/NewWrite.jpg?sign=5baa38d3d36aa697b0175b43b7cb612a&t=1591809842);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.conts{
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;
+  height: auto;
+  padding-top: 10rpx;
+  border: 1rpx soldi red;
+}
+.areas{
+  width: 65%;
+  height:60vh;
+  font-size: 35rpx;
+  margin: 0 auto;
+  overflow: hidden;   
+  position: relative; 
+  top: 100rpx;
+  left: 10rpx;
+  color: black;
+  
+}
+.pc{
+  color:black;
+}
+.currentWordNumber{
+  font-size: 30rpx;
+  color:black;
+  position: absolute;
+  top: 70vh;
+  left: 130rpx;
+}
+.hint{
+   font-size: 28rpx;
+   position: absolute;
+   top: 10rpx;
+   left: 0rpx;
+   color: #FF6600;
+}
+.btn{
+  color: black;
+  background: -webkit-linear-gradient(top,#DCBC60,#D8B558,#D1A850);
+  width: 200px;
+  position: relative;
+  top: 18vh;
+}
+.User{
+  display: flex;
+  position: relative;
+  top: 9vh;
+  left: 475rpx;
+  width: 100px;
+}
+.icon{
+  display: block;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+}
+.Name{
+  width: 60px;
+  padding-left: 6px;
+  line-height: 25px;
+  display:-webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal !important ;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
